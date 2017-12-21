@@ -5,15 +5,15 @@
   <!-- Banner -->
   <section id="banner">
     <div class="inner">
-      <h2>Fjällräven Kånken</h2>
-      <p>Another fine responsive<br />
-        site template freebie<br />
-        crafted by <a href="http://html5up.net">HTML5 UP</a>.</p>
+      <h2><%= t('views.index.brand') %></h2>
+      <p><%= t('views.index.slogan_1') %><br/>
+          <%= t('views.index.slogan_2')%><br/>
+          <%= t('views.index.slogan_3') %></p>
       <ul class="actions">
-        <li><a href="#" class="button special">Activate</a></li>
+        <li><a href="#" class="button special"><%= t('views.index.buy') %></a></li>
       </ul>
     </div>
-    <a href="#one" class="more scrolly">Learn More</a>
+    <a href="#two" class="more scrolly"><%= t('views.index.more') %></a>
   </section>
 
   <!-- One -->
@@ -107,6 +107,10 @@
         <li><a href="#" class="button fit">Learn More</a></li>
       </ul>
     </div>
+  </section>
+
+  <section>
+
   </section>
 
   <!-- Footer -->
