@@ -1,0 +1,71 @@
+#backpack-colors {
+  padding-top: 1%;
+  padding-bottom: 4%;
+  background-color: white;
+  color: black;
+}
+
+
+#color-panel {
+  align-items: center;
+}
+
+.col-2 {
+  margin-top: 2%;
+}
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+  position: absolute;
+  visibility: hidden;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #666;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+}
+
+[id="color-red"]:checked + label:before,
+[id="color-red"]:not(:checked) + label:before {
+  background-color: red;
+}
+
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
