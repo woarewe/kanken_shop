@@ -83,73 +83,15 @@
         <h2 class="black-text"><%= t('views.index.model') %></h2>
         <label class="black-text"><%= t('views.index.color_choice') %></label>
         <form class="custom-radios">
-          <%= render @backpacks %>
-          <!--<div>-->
-            <!--<input type="radio" id="color-green-yellow" name="color" value="color-green-yellow" checked>-->
-            <!--<label for="color-green-yellow">-->
-              <!--<span>-->
-                <!--<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />-->
-              <!--</span>-->
-            <!--</label>-->
-          <!--</div>-->
-          <!--<div>-->
-            <!--<input type="radio" id="color-blue" name="color" value="color-blue">-->
-            <!--<label for="color-blue">-->
-              <!--<span>-->
-                <!--<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />-->
-              <!--</span>-->
-            <!--</label>-->
-          <!--</div>-->
-          <!--<div>-->
-            <!--<input type="radio" id="color-yellow" name="color" value="color-yellow">-->
-            <!--<label for="color-yellow">-->
-              <!--<span>-->
-                <!--<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />-->
-              <!--</span>-->
-            <!--</label>-->
-          <!--</div>-->
-          <!--<div>-->
-            <!--<input type="radio" id="color-red" name="color" value="color-red">-->
-            <!--<label for="color-red">-->
-              <!--<span>-->
-                <!--<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />-->
-              <!--</span>-->
-            <!--</label>-->
-          <!--</div>-->
-          <!--<div>-->
-            <!--<input type="radio" id="color-rebecca-purple" name="color" value="color-rebecca-purple">-->
-            <!--<label for="color-rebecca-purple">-->
-              <!--<span>-->
-                <!--<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />-->
-              <!--</span>-->
-            <!--</label>-->
-          <!--</div>-->
-          <!--<div>-->
-            <!--<input type="radio" id="color-orange" name="color" value="color-orange">-->
-            <!--<label for="color-orange">-->
-              <!--<span>-->
-                <!--<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />-->
-              <!--</span>-->
-            <!--</label>-->
-          <!--</div>-->
-          <!--<div>-->
-            <!--<input type="radio" id="color-6" name="color" value="color-6">-->
-            <!--<label for="color-6">-->
-              <!--<span>-->
-                <!--<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />-->
-              <!--</span>-->
-            <!--</label>-->
-          <!--</div>-->
-          <!--<div>-->
-            <!--<input type="radio" id="color-7" name="color" value="color-7">-->
-            <!--<label for="color-7">-->
-              <!--<span>-->
-                <!--<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />-->
-              <!--</span>-->
-            <!--</label>-->
-          <!--</div>-->
+          <%= raw radio_color_tag @backpacks.first, checked: true %>
+          <%= render @backpacks[1..-1] %>
         </form>
-        <%= button_tag t('views.index.buy_button'), class: 'btn btn-outline-primary w-100' %>
+
+        <button type="button" class="btn btn-outline-danger w-100" data-toggle="modal" data-target="#orderForm">
+          <%= t('views.index.buy_button') %>
+        </button>
+
+        <%= render 'components/order_form' %>
       </div>
       </div>
       <div class="col-2"></div>

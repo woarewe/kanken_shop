@@ -14,3 +14,5 @@ ru:
       model: 'Kanken Classic'
       color_choice: 'Выберете цвет: '
       buy_button: 'Оставить заказ'
+    order_form:
+      title: 'Купить в один клик!'
