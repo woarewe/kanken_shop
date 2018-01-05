@@ -13,6 +13,7 @@
 //= require jquery
 //= require popper
 //= require bootstrap
+//= require color_panel.js.erb
 //= require skel
 //= require rails-ujs
 //= require turbolinks

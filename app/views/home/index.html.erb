@@ -10,7 +10,7 @@
           <%= t('views.index.slogan.line_2')%><br/>
           <%= t('views.index.slogan.line_3') %></p>
       <ul class="actions">
-        <li><a href="#" class="button special" id="more"><%= t('views.index.buy') %></a></li>
+        <li><a href="#backpack-colors" class="button special" id="more"><%= t('views.index.buy') %></a></li>
       </ul>
     </div>
     <a href="#one" class="more scrolly"><%= t('views.index.more') %></a>
@@ -75,113 +75,80 @@
     <div class="row">
       <div class="col-2"></div>
       <div class="col-3">
-
+        <%= image_tag 'backpacks/yellow.jpg', class: 'img-thumbnail', id: 'image-backpack', alt: 'Backpack'%>
       </div>
       <div class="col-2"></div>
+
       <div class="col-3">
-        <div class="custom-radios">
+        <h2 class="black-text"><%= t('views.index.model') %></h2>
+        <label class="black-text"><%= t('views.index.color_choice') %></label>
+        <for class="custom-radios">
           <div>
-            <input type="radio" id="color-1" name="color" value="color-1" checked>
-            <label for="color-1">
-      <span>
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
-      </span>
-            </label>
-          </div>
-
-          <div>
-            <input type="radio" id="color-2" name="color" value="color-2">
-            <label for="color-2">
-      <span>
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
-      </span>
-            </label>
-          </div>
-
-          <div>
-            <input type="radio" id="color-3" name="color" value="color-3">
-            <label for="color-3">
-      <span>
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
-      </span>
-            </label>
-          </div>
-
-          <div>
-            <input type="radio" id="color-4" name="color" value="color-4">
-            <label for="color-4">
-      <span>
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
-      </span>
+            <input type="radio" id="color-green-yellow" name="color" value="color-green-yellow" checked>
+            <label for="color-green-yellow">
+              <span>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+              </span>
             </label>
           </div>
           <div>
-            <input type="radio" id="color-4" name="color" value="color-4">
-            <label for="color-4">
-      <span>
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
-      </span>
+            <input type="radio" id="color-blue" name="color" value="color-blue">
+            <label for="color-blue">
+              <span>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+              </span>
             </label>
           </div>
           <div>
-            <input type="radio" id="color-4" name="color" value="color-4">
-            <label for="color-4">
-      <span>
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
-      </span>
+            <input type="radio" id="color-yellow" name="color" value="color-yellow">
+            <label for="color-yellow">
+              <span>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+              </span>
             </label>
           </div>
           <div>
-            <input type="radio" id="color-4" name="color" value="color-4">
-            <label for="color-4">
-      <span>
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
-      </span>
+            <input type="radio" id="color-red" name="color" value="color-red">
+            <label for="color-red">
+              <span>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+              </span>
             </label>
           </div>
           <div>
-            <input type="radio" id="color-4" name="color" value="color-4">
-            <label for="color-4">
-      <span>
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
-      </span>
+            <input type="radio" id="color-rebecca-purple" name="color" value="color-rebecca-purple">
+            <label for="color-rebecca-purple">
+              <span>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+              </span>
             </label>
           </div>
           <div>
-            <input type="radio" id="color-4" name="color" value="color-4">
-            <label for="color-4">
-      <span>
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
-      </span>
+            <input type="radio" id="color-orange" name="color" value="color-orange">
+            <label for="color-orange">
+              <span>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+              </span>
             </label>
           </div>
           <div>
-            <input type="radio" id="color-4" name="color" value="color-4">
-            <label for="color-4">
-      <span>
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
-      </span>
+            <input type="radio" id="color-6" name="color" value="color-6">
+            <label for="color-6">
+              <span>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+              </span>
             </label>
           </div>
           <div>
-            <input type="radio" id="color-4" name="color" value="color-4">
-            <label for="color-4">
-      <span>
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
-      </span>
+            <input type="radio" id="color-7" name="color" value="color-7">
+            <label for="color-7">
+              <span>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+              </span>
             </label>
           </div>
-          <div>
-            <input type="radio" id="color-4" name="color" value="color-4">
-            <label for="color-4">
-      <span>
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
-      </span>
-            </label>
-          </div>
-
-        </div>
-
+        </for>
+        <%= button_tag t('views.index.buy_button'), class: 'btn btn-outline-primary w-100' %>
       </div>
       </div>
       <div class="col-2"></div>

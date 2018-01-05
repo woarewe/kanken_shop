@@ -11,3 +11,6 @@ ru:
       delivery: 'Беслпатная доставка по РБ'
       return: 'Возврат товара в течение 14 дней'
       payment: 'Любой вид оплаты'
+      model: 'Kanken Classic'
+      color_choice: 'Выберете цвет: '
+      buy_button: 'Оставить заказ'

@@ -1,0 +1,13 @@
+$(document).ready(function() {
+    $('#color-orange').change(function() {
+        document.getElementById('image-backpack').src = "<%= asset_path('backpacks/orange.jpg') %>";
+    })
+
+    $('#color-yellow').change(function() {
+        document.getElementById('image-backpack').src = "<%= asset_path('backpacks/yellow.jpg') %>";
+    })
+
+    $('#color-rebecca-purple').change(function() {
+        document.getElementById('image-backpack').src = "<%= asset_path('backpacks/purple.jpg') %>";
+    })
+})

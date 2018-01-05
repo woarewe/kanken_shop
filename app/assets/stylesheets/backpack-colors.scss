@@ -4,14 +4,14 @@
   color: black;
 }
 
-// Colors
-$color-1: #2ecc71;
-$color-2: #3498db;
-$color-3: #f1c40f;
-$color-4: #e74c3c;
+.black-text {
+  color: black;
+}
 
 
-
+.buy-button {
+  border-radius: 30%;
+}
 #color-panel {
   align-items: center;
 }
@@ -56,21 +56,61 @@ $color-4: #e74c3c;
       }
     }
 
-    &#color-1 + label span {
-      background-color: $color-1;
+    &#color-green-yellow + label span {
+      background-color: greenyellow;
     }
 
-    &#color-2 + label span {
-      background-color: $color-2;
+    &#color-blue + label span {
+      background-color: blue;
     }
 
-    &#color-3 + label span {
-      background-color: $color-3;
+    &#color-yellow + label span {
+      background-color: yellow;
     }
 
-    &#color-4 + label span {
-      background-color: $color-4;
+    &#color-red + label span {
+      background-color: red;
     }
+
+    &#color-orange + label span {
+      background-color: orange;
+    }
+
+    &#color-rebecca-purple + label span {
+      background-color: rebeccapurple;
+    }
+
+
+    &#color-5 + label span {
+      background-image: -webkit-gradient(
+                      linear,
+                      right bottom,
+                      left bottom,
+                      color-stop(0, #99FFA7),
+                      color-stop(1, #337EB0)
+      );
+    }
+
+    &#color-6 + label span {
+      background-image: -webkit-gradient(
+                      linear,
+                      right bottom,
+                      left bottom,
+                      color-stop(0, #C4BC62),
+                      color-stop(1, #4C7D9E)
+      );
+    }
+
+    &#color-7 + label span {
+      background-image: -webkit-gradient(
+                      linear,
+                      right bottom,
+                      left bottom,
+                      color-stop(0, #000DFF),
+                      color-stop(1, #FF4400)
+      );
+    }
+
 
     &:checked + label span img {
       opacity: 1;
