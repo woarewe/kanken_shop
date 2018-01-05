@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-    @backpacks = Backpack.where(status: true)
+    @backpacks = Backpack.all.select(&:status)
   end
 end
