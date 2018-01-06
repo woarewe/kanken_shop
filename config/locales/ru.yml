@@ -15,4 +15,9 @@ ru:
       color_choice: 'Выберете цвет: '
       buy_button: 'Оставить заказ'
     order_form:
-      title: 'Купить в один клик!'
+      title: '3 простых шага!'
+      placeholders:
+        name: 'Ваше имя'
+        phone: 'Контактный номер телефона'
+        adress: 'Адрес доставки'
+      submit: 'Заказать'

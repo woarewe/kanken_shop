@@ -86,15 +86,14 @@
           <%= raw radio_color_tag @backpacks.first, checked: true %>
           <%= render @backpacks[1..-1] %>
         </form>
-
-        <button type="button" class="btn btn-outline-danger w-100" data-toggle="modal" data-target="#orderForm">
+        <br>
+        <button type="button" class="btn btn-outline-danger w-100" data-toggle="modal" data-target="#orderForm" id="preOrder">
           <%= t('views.index.buy_button') %>
         </button>
-
         <%= render 'components/order_form' %>
       </div>
-      </div>
       <div class="col-2"></div>
+    </div>
   </section>
 
 

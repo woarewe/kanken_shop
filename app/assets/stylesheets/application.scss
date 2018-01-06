@@ -149,15 +149,15 @@ sup {
   top: -0.5em;
 }
 
-hr {
-  border: 0;
-  border-bottom: solid 2px _palette(border);
-  margin: (_size(element-margin) * 1.5) 0;
-
-  &.major {
-    margin: (_size(element-margin) * 2.25) 0;
-  }
-}
+//hr {
+//  border: 0;
+//  border-bottom: solid 2px _palette(border);
+//  margin: (_size(element-margin) * 1.5) 0;
+//
+//  &.major {
+//    margin: (_size(element-margin) * 2.25) 0;
+//  }
+//}
 
 blockquote {
   border-left: solid 4px _palette(border);
@@ -263,126 +263,126 @@ header {
   }
 }
 
-/* Form */
-
-form {
-  margin: 0 0 _size(element-margin) 0;
-}
-
-label {
-  color: _palette(fg-bold);
-  display: block;
-  font-size: 0.9em;
-  font-weight: _font(weight-bold);
-  margin: 0 0 (_size(element-margin) * 0.5) 0;
-}
-
-input[type="text"],
-input[type="password"],
-input[type="email"],
-select,
-textarea {
-  @include vendor('appearance', 'none');
-  background: _palette(border-bg);
-  border-radius: 3px;
-  border: none;
-  color: inherit;
-  display: block;
-  outline: 0;
-  padding: 0 1em;
-  text-decoration: none;
-  width: 100%;
-
-  &:invalid {
-    box-shadow: none;
-  }
-
-  &:focus {
-    box-shadow: 0 0 0 2px _palette(accent1, bg);
-  }
-}
-
-.select-wrapper {
-  @include icon;
-  display: block;
-  position: relative;
-
-  &:before {
-    @include vendor('pointer-events', 'none');
-    color: _palette(border);
-    content: '\f078';
-    display: block;
-    height: _size(element-height);
-    line-height: _size(element-height);
-    position: absolute;
-    right: 0;
-    text-align: center;
-    top: 0;
-    width: _size(element-height);
-  }
-
-  select::-ms-expand {
-    display: none;
-  }
-}
-
-input[type="text"],
-input[type="password"],
-input[type="email"],
-select {
-  height: _size(element-height);
-}
-
-textarea {
-  padding: 0.75em 1em;
-}
-
-
-::-webkit-input-placeholder {
-  color: _palette(fg-light) !important;
-  opacity: 1.0;
-}
-
-:-moz-placeholder {
-  color: _palette(fg-light) !important;
-  opacity: 1.0;
-}
-
-::-moz-placeholder {
-  color: _palette(fg-light) !important;
-  opacity: 1.0;
-}
-
-:-ms-input-placeholder {
-  color: _palette(fg-light) !important;
-  opacity: 1.0;
-}
-
-.formerize-placeholder {
-  color: _palette(fg-light) !important;
-  opacity: 1.0;
-}
+///* Form */
+//
+//form {
+//  margin: 0 0 _size(element-margin) 0;
+//}
+//
+//label {
+//  color: _palette(fg-bold);
+//  display: block;
+//  font-size: 0.9em;
+//  font-weight: _font(weight-bold);
+//  margin: 0 0 (_size(element-margin) * 0.5) 0;
+//}
+//
+//input[type="text"],
+//input[type="password"],
+//input[type="email"],
+//select,
+//textarea {
+//  @include vendor('appearance', 'none');
+//  background: _palette(border-bg);
+//  border-radius: 3px;
+//  border: none;
+//  color: inherit;
+//  display: block;
+//  outline: 0;
+//  padding: 0 1em;
+//  text-decoration: none;
+//  width: 100%;
+//
+//  &:invalid {
+//    box-shadow: none;
+//  }
+//
+//  &:focus {
+//    box-shadow: 0 0 0 2px _palette(accent1, bg);
+//  }
+//}
+//
+//.select-wrapper {
+//  @include icon;
+//  display: block;
+//  position: relative;
+//
+//  &:before {
+//    @include vendor('pointer-events', 'none');
+//    color: _palette(border);
+//    content: '\f078';
+//    display: block;
+//    height: _size(element-height);
+//    line-height: _size(element-height);
+//    position: absolute;
+//    right: 0;
+//    text-align: center;
+//    top: 0;
+//    width: _size(element-height);
+//  }
+//
+//  select::-ms-expand {
+//    display: none;
+//  }
+//}
+//
+//input[type="text"],
+//input[type="password"],
+//input[type="email"],
+//select {
+//  height: _size(element-height);
+//}
+//
+//textarea {
+//  padding: 0.75em 1em;
+//}
+//
+//
+//::-webkit-input-placeholder {
+//  color: _palette(fg-light) !important;
+//  opacity: 1.0;
+//}
+//
+//:-moz-placeholder {
+//  color: _palette(fg-light) !important;
+//  opacity: 1.0;
+//}
+//
+//::-moz-placeholder {
+//  color: _palette(fg-light) !important;
+//  opacity: 1.0;
+//}
+//
+//:-ms-input-placeholder {
+//  color: _palette(fg-light) !important;
+//  opacity: 1.0;
+//}
+//
+//.formerize-placeholder {
+//  color: _palette(fg-light) !important;
+//  opacity: 1.0;
+//}
 
 /* Box */
-
-.box {
-  border-radius: 3px;
-  border: solid 2px _palette(border);
-  margin-bottom: _size(element-margin);
-  padding: 1.5em;
-
-  > :last-child,
-  > :last-child > :last-child,
-  > :last-child > :last-child > :last-child {
-    margin-bottom: 0;
-  }
-
-  &.alt {
-    border: 0;
-    border-radius: 0;
-    padding: 0;
-  }
-}
+//
+//.box {
+//  border-radius: 3px;
+//  border: solid 2px _palette(border);
+//  margin-bottom: _size(element-margin);
+//  padding: 1.5em;
+//
+//  > :last-child,
+//  > :last-child > :last-child,
+//  > :last-child > :last-child > :last-child {
+//    margin-bottom: 0;
+//  }
+//
+//  &.alt {
+//    border: 0;
+//    border-radius: 0;
+//    padding: 0;
+//  }
+//}
 
 /* Icon */
 
@@ -727,12 +727,7 @@ table {
   }
 }
 
-/* Button */
 
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
-button,
 .button {
   @include vendor('appearance', 'none');
   @include vendor('transition', ('background-color #{_duration(transitions)} ease-in-out', 'color #{_duration(transitions)} ease-in-out'));
