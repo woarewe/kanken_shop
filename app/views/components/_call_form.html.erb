@@ -1,7 +1,7 @@
 <%= form_for @call, remote: true, class: 'form-inline' do |form| %>
     <div class="row">
       <div class="col-md-6">
-        <%= form.text_field :phone, class: 'form-control' %>
+        <%= form.text_field :phone, class: 'form-control phone', value: '+375' %>
       </div>
       <div class="col-md-6">
         <%= form.submit t('views.call_section.button'), class: 'btn btn-danger w-100' %>

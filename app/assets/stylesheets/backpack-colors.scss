@@ -2,6 +2,7 @@
   padding-top: 1%;
   background-color: white;
   color: black;
+  height: 800px;
 }
 
 .black-text {
@@ -68,8 +69,7 @@
     &#color-yellow + label span {
       background-color: #FFFF00 ;
     }
-
-
+    
     &#color-orange + label span {
       background-color: #FFA500;
     }
@@ -89,8 +89,6 @@
     &#color-pink + label span {
       background-color:  #FFE4E1;
     }
-
-
 
     &:checked + label span img {
       opacity: 1;

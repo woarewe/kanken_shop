@@ -15,8 +15,10 @@
 //= require bootstrap
 //= require color_panel.js.erb
 //= require skel
+//= require home
 //= require rails-ujs
 //= require turbolinks
+//= require jquery.mask
 //= require_tree .
 
 (function($) {

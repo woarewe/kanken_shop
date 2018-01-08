@@ -71,34 +71,6 @@
     </section>
   </section>
 
-  <!-- Backpacks -->
-
-  <section id="backpack-colors" class="container-fluid">
-    <div class="row">
-      <div class="col-2"></div>
-      <div class="col-3">
-        <%= image_tag @backpacks.first.image, class: 'img-fluid', id: 'image-backpack', alt: 'Backpack'  %>
-      </div>
-      <div class="col-2"></div>
-
-      <div class="col-3">
-        <h2 class="black-text"><%= t('views.index.model') %></h2>
-        <label class="black-text"><%= t('views.index.color_choice') %></label>
-        <form class="custom-radios">
-          <%= raw radio_color_tag @backpacks.first, checked: true %>
-          <%= render @backpacks[1..-1] %>
-        </form>
-        <br>
-        <button class="btn btn-outline-danger w-100" data-toggle="modal" data-target="#orderForm" id="preOrder">
-          <%= t('views.index.buy_button') %>
-        </button>
-        <%= render 'components/order_form' %>
-        <%= render 'components/order_notice' %>
-      </div>
-      <div class="col-2"></div>
-    </div>
-  </section>
-
   <!-- Call -->
 
   <section id="call-section">
@@ -119,47 +91,65 @@
     </div>
   </section>
 
+  <!-- Backpacks -->
 
-  <!-- Girl(steps) -->
-  <section id="girl">
+  <section id="backpack-colors" class="container-fluid">
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-3">
+        <%= image_tag @backpacks.first.image, class: 'img-fluid', id: 'image-backpack', alt: 'Backpack'  %>
+      </div>
+      <div class="col-2"></div>
 
+      <div class="col-3">
+        <h2 class="black-text"><%= t('views.index.model') %></h2>
+        <label class="black-text"><%= t('views.index.color_choice') %></label>
+        <form class="custom-radios">
+          <%= raw radio_color_tag @backpacks.first, checked: true %>
+          <% @backpacks[1..-1].each do |backpack| %>
+            <%= raw radio_color_tag backpack %>
+          <% end %>
+        </form>
+        <br>
+        <button class="btn btn-outline-danger w-100" data-toggle="modal" data-target="#orderForm" id="preOrder">
+          <%= t('views.index.buy_button') %>
+        </button>
+        <%= render 'components/order_form' %>
+      </div>
+      <div class="col-2"></div>
+    </div>
   </section>
 
 
-  <!-- Three -->
-  <section id="three" class="wrapper style3 special">
-    <div class="inner">
-      <header class="major">
-        <h2>Accumsan mus tortor nunc aliquet</h2>
-        <p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-          fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
-      </header>
-      <ul class="features">
-        <li class="icon fa-paper-plane-o">
-          <h3>Arcu accumsan</h3>
-          <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-        </li>
-        <li class="icon fa-laptop">
-          <h3>Ac Augue Eget</h3>
-          <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-        </li>
-        <li class="icon fa-code">
-          <h3>Mus Scelerisque</h3>
-          <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-        </li>
-        <li class="icon fa-headphones">
-          <h3>Mauris Imperdiet</h3>
-          <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-        </li>
-        <li class="icon fa-heart-o">
-          <h3>Aenean Primis</h3>
-          <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-        </li>
-        <li class="icon fa-flag-o">
-          <h3>Tortor Ut</h3>
-          <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-        </li>
-      </ul>
+
+
+  <!-- Girl(steps) -->
+  <section id="girl">
+    <div class="container-fluid">
+      <div class="row">
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Reviews -->
+  <section id="reviews">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+          <h1><%= t('views.review_section.title') %></h1>
+          <button class="btn btn-danger w-100" data-toggle="modal" data-target="#reviewForm"><%= t('views.review_section.review_button') %></button>
+          <%= render 'components/review_form' %>
+        </div>
+        <div class="col-md-4">
+          <div id="reviews_list">
+            <%= render @reviews %>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
     </div>
   </section>
 

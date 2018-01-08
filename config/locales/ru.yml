@@ -44,3 +44,7 @@ ru:
       control: 'Управление'
       delete: 'Удалить'
       confirmation: 'Вы уверены?'
+    review_section:
+      review_button: 'Оставить отзыв'
+      title: 'О нас говорят'
+      modal_title: 'Оставить отзыв'

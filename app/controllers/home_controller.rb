@@ -3,5 +3,6 @@ class HomeController < ApplicationController
     @backpacks = Backpack.all.select(&:status)
     @order = Order.new
     @call = Call.new
+    @reviews = Review.all
   end
 end
