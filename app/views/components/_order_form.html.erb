@@ -10,8 +10,8 @@
         </button>
       </div>
       <div class="modal-body">
-        <%= form_for Order.new, url: orders_path, remote: true do |f| %>
-            <div class="form-group">
+        <%= form_for @order, remote: true do |f| %>
+            <div class="form-g,roup">
               <%= f.text_field :name, class: 'form-control', placeholder: t('views.order_form.placeholders.name') %>
             </div>
             <div class="form-group">

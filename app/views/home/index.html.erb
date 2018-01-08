@@ -89,7 +89,7 @@
           <%= render @backpacks[1..-1] %>
         </form>
         <br>
-        <button type="button" class="btn btn-outline-danger w-100" data-toggle="modal" data-target="#orderForm" id="preOrder">
+        <button class="btn btn-outline-danger w-100" data-toggle="modal" data-target="#orderForm" id="preOrder">
           <%= t('views.index.buy_button') %>
         </button>
         <%= render 'components/order_form' %>
@@ -104,7 +104,17 @@
   <section id="call-section">
     <div class="container">
       <div class="row">
-
+        <div class="col-2"></div>
+        <div class="col-6">
+          <div class="call-text">
+            <h1><%= t('views.call_section.text.line_1')%></h1><br>
+            <h1><%= t('views.call_section.text.line_2')%></h1><br>
+            <h1><%= t('views.call_section.text.line_3')%></h1><br>
+            <h1><%= t('views.call_section.text.line_4')%></h1><br>
+          </div>
+          <%= render 'components/call_form' %>
+        </div>
+        <div class="col-4"></div>
       </div>
     </div>
   </section>

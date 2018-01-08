@@ -1,0 +1,11 @@
+<%= form_for @call, remote: true, class: 'form-inline' do |form| %>
+    <div class="row">
+      <div class="col-md-6">
+        <%= form.text_field :phone, class: 'form-control' %>
+      </div>
+      <div class="col-md-6">
+        <%= form.submit t('views.call_section.button'), class: 'btn btn-danger w-100' %>
+      </div>
+    </div>
+<% end %>
+
