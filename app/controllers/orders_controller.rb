@@ -12,6 +12,8 @@ class OrdersController < ApplicationController
     @order = Order.new(order_params)
     @order.save
 
+    OrderMailer.with(order: @order).notice_order_email.deliver_later
+
     respond_to do |format|
       format.js
     end
