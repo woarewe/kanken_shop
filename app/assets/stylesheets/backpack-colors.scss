@@ -90,6 +90,51 @@
       background-color:  #FFE4E1;
     }
 
+    &#color-steel-blue + label span {
+      background-color:  #4682B4;
+    }
+
+    &#color-darksea-green + label span {
+      background-color:  #8FBC8F;
+    }
+
+    &#color-deepsky-blue + label span {
+      background-color:  #00BFFF;
+    }
+
+    &#color-golden-rod + label span {
+      background-color:  #DAA520;
+    }
+
+    &#color-indigo + label span {
+      background-color:  #4B0082;
+    }
+
+    &#color-indian-red + label span {
+      background-color: #CD5C5C;
+    }
+
+    &#color-putty + label span {
+      background-color: #FFDAB9;
+    }
+
+    &#color-sienna + label span {
+      background-color: #A0522D;
+    }
+
+    &#color-saddle-brown + label span {
+      background-color: #8B4513;
+    }
+
+    &#color-peach-pink + label span {
+      background-color: #FFC0CB;
+    }
+
+    &#color-ox-red + label span {
+      background-color: #A52A2A;
+    }
+
+
     &:checked + label span img {
       opacity: 1;
     }
