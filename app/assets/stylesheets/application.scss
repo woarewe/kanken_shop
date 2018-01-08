@@ -2,6 +2,7 @@
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
 @import 'libs/vars';
+@import 'welcome';
 @import 'libs/functions';
 @import 'backpack-colors';
 @import 'libs/mixins';
@@ -1781,4 +1782,5 @@ body.is-mobile {
 .btn.active span.glyphicon {
   opacity: 1;
 }
+
 

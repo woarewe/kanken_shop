@@ -9,15 +9,25 @@ $(document).ready(function() {
 
     })
 
+
     $('#color-orange').change(function() {
-        document.getElementById('image-backpack').src = "<%= asset_path('backpacks/orange.jpg') %>";
+        $('#image-backpack').fadeOut(500, function() {
+            $('#image-backpack').attr("src","<%= asset_path('backpacks/orange.jpg') %>");
+            $('#image-backpack').fadeIn(500);
+        });
     })
 
     $('#color-yellow').change(function() {
-        document.getElementById('image-backpack').src = "<%= asset_path('backpacks/yellow.jpg') %>";
+        $('#image-backpack').fadeOut(500, function() {
+            $('#image-backpack').attr("src","<%= asset_path('backpacks/yellow.jpg') %>");
+            $('#image-backpack').fadeIn(500);
+        });
     })
 
     $('#color-rebecca-purple').change(function() {
-        document.getElementById('image-backpack').src = "<%= asset_path('backpacks/rebecca_purple.jpg') %>";
+        $('#image-backpack').fadeOut(500, function() {
+            $('#image-backpack').attr("src","<%= asset_path('backpacks/rebecca_purple.jpg') %>");
+            $('#image-backpack').fadeIn(500);
+        });
     })
 })
