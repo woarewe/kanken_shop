@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'reviews/create'
+
+  get 'reviews/destroy'
+
   get 'home/index'
 
   root 'home#index'

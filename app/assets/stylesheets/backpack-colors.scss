@@ -57,60 +57,39 @@
       }
     }
 
-    &#color-green-yellow + label span {
-      background-color: greenyellow;
+    &#color-medium-blue + label span {
+      background-color: #0000CD;
     }
 
-    &#color-blue + label span {
-      background-color: blue;
+    &#color-forest-green + label span {
+      background-color:  #228B22;
     }
 
     &#color-yellow + label span {
-      background-color: yellow;
+      background-color: #FFFF00 ;
     }
 
-    &#color-red + label span {
-      background-color: red;
-    }
 
     &#color-orange + label span {
-      background-color: orange;
+      background-color: #FFA500;
     }
 
-    &#color-rebecca-purple + label span {
-      background-color: rebeccapurple;
+    &#color-teal + label span {
+      background-color: #008080;
     }
 
-
-    &#color-5 + label span {
-      background-image: -webkit-gradient(
-                      linear,
-                      right bottom,
-                      left bottom,
-                      color-stop(0, #99FFA7),
-                      color-stop(1, #337EB0)
-      );
+    &#color-air-blue + label span {
+      background-color:  #40E0D0;
     }
 
-    &#color-6 + label span {
-      background-image: -webkit-gradient(
-                      linear,
-                      right bottom,
-                      left bottom,
-                      color-stop(0, #C4BC62),
-                      color-stop(1, #4C7D9E)
-      );
+    &#color-maroon + label span {
+      background-color:  #800000;
     }
 
-    &#color-7 + label span {
-      background-image: -webkit-gradient(
-                      linear,
-                      right bottom,
-                      left bottom,
-                      color-stop(0, #000DFF),
-                      color-stop(1, #FF4400)
-      );
+    &#color-pink + label span {
+      background-color:  #FFE4E1;
     }
+
 
 
     &:checked + label span img {

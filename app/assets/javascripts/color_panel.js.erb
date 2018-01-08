@@ -9,6 +9,12 @@ $(document).ready(function() {
 
     })
 
+    $('#color-yellow').change(function() {
+        $('#image-backpack').fadeOut(500, function() {
+            $('#image-backpack').attr("src","<%= asset_path('backpacks/yellow.jpg') %>");
+            $('#image-backpack').fadeIn(500);
+        });
+    })
 
     $('#color-orange').change(function() {
         $('#image-backpack').fadeOut(500, function() {
@@ -17,17 +23,46 @@ $(document).ready(function() {
         });
     })
 
-    $('#color-yellow').change(function() {
+    $('#color-medium-blue').change(function() {
         $('#image-backpack').fadeOut(500, function() {
-            $('#image-backpack').attr("src","<%= asset_path('backpacks/yellow.jpg') %>");
+            $('#image-backpack').attr("src","<%= asset_path('backpacks/medium_blue.jpg') %>");
             $('#image-backpack').fadeIn(500);
         });
     })
 
-    $('#color-rebecca-purple').change(function() {
+    $('#color-forest-green').change(function() {
         $('#image-backpack').fadeOut(500, function() {
-            $('#image-backpack').attr("src","<%= asset_path('backpacks/rebecca_purple.jpg') %>");
+            $('#image-backpack').attr("src","<%= asset_path('backpacks/forest_green.jpg') %>");
             $('#image-backpack').fadeIn(500);
         });
     })
+
+    $('#color-teal').change(function() {
+        $('#image-backpack').fadeOut(500, function() {
+            $('#image-backpack').attr("src","<%= asset_path('backpacks/teal.jpg') %>");
+            $('#image-backpack').fadeIn(500);
+        });
+    })
+
+    $('#color-air-blue').change(function() {
+        $('#image-backpack').fadeOut(500, function() {
+            $('#image-backpack').attr("src","<%= asset_path('backpacks/air_blue.jpg') %>");
+            $('#image-backpack').fadeIn(500);
+        });
+    })
+
+    $('#color-maroon').change(function() {
+        $('#image-backpack').fadeOut(500, function() {
+            $('#image-backpack').attr("src","<%= asset_path('backpacks/maroon.jpg') %>");
+            $('#image-backpack').fadeIn(500);
+        });
+    })
+
+    $('#color-pink').change(function() {
+        $('#image-backpack').fadeOut(500, function() {
+            $('#image-backpack').attr("src","<%= asset_path('backpacks/pink.jpg') %>");
+            $('#image-backpack').fadeIn(500);
+        });
+    })
+
 })
