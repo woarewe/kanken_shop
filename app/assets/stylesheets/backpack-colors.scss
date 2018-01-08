@@ -44,8 +44,7 @@
         vertical-align: middle;
         cursor: pointer;
         border-radius: 50%;
-        border: 2px solid #FFFFFF;
-        box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+        border: 1px solid white;
         background-repeat: no-repeat;
         background-position: center;
         text-align: center;
@@ -134,6 +133,41 @@
       background-color: #A52A2A;
     }
 
+    &#color-midnight-blue + label span {
+      background-color: #191970;
+    }
+
+    &#color-black + label span {
+      background-color: #000000;
+    }
+
+    &#color-navy + label span {
+      background-color: #000080;
+    }
+
+    &#color-olivedrab + label span {
+      background-color: #6B8E23;
+    }
+
+    &#color-paleturquoise + label span {
+      background-color: #AFEEEE;
+    }
+
+    &#color-frost-green + label span {
+      background-color: #008080;
+    }
+
+    &#color-graphite + label span {
+      background-color: #2F4F4F;
+    }
+
+    &#color-fog + label span {
+      background-color: #D3D3D3;
+    }
+
+    &#color-tomato + label span {
+      background-color: #FF6347;
+    }
 
     &:checked + label span img {
       opacity: 1;
