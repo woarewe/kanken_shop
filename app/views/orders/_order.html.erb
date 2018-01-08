@@ -1,0 +1,8 @@
+<tr>
+  <td><%= order.name %></td>
+  <td><%= order.phone %></td>
+  <td><%= order.adress %></td>
+  <td><%= order.color %></td>
+  <td><%= link_to t('views.admin_panel.delete'), order_path(order), method: :delete,
+          data:   { confirm: t('views.admin_panel.confirmation') }, class: 'btn btn-danger w-100' %></td>
+</tr>

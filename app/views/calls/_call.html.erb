@@ -1,0 +1,5 @@
+<tr>
+  <td><%= call.phone %></td>
+  <td><%= link_to t('views.admin_panel.delete'), call_path(call), method: :delete,
+                  data:   { confirm: t('views.admin_panel.confirmation') }, class: 'btn btn-danger w-100' %></td>
+</tr>

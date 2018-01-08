@@ -3,6 +3,9 @@ class OrdersController < ApplicationController
   http_basic_authenticate_with name: 'admin', password: 'admin', except: :create
 
   def destroy
+    @order = Order.find(params[:id])
+    @order.destroy!
+    redirect_to orders_path
   end
 
   def create
@@ -16,6 +19,8 @@ class OrdersController < ApplicationController
   end
 
   def index
+    @orders = Order.all
+    @calls = Call.all
   end
 
   private
