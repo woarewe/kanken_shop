@@ -15,7 +15,7 @@
               <%= f.text_field :name, class: 'form-control', placeholder: t('views.order_form.placeholders.name') %>
             </div>
             <div class="form-group">
-              <%= f.text_field :phone, class: 'form-control', placeholder: t('views.order_form.placeholders.phone'), type: 'tel' %>
+              <%= f.text_field :phone, class: 'form-control phone', placeholder: t('views.order_form.placeholders.phone'), type: 'tel', value: '+375' %>
             </div>
             <div class="form-group">
               <%= f.text_area :adress, class: 'form-control', placeholder: t('views.order_form.placeholders.adress') %>

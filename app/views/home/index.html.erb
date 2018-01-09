@@ -79,10 +79,10 @@
         <div class="col-2"></div>
         <div class="col-6">
           <div class="call-text">
-            <h1><%= t('views.call_section.text.line_1')%></h1><br>
-            <h1><%= t('views.call_section.text.line_2')%></h1><br>
-            <h1><%= t('views.call_section.text.line_3')%></h1><br>
-            <h1><%= t('views.call_section.text.line_4')%></h1><br>
+            <p class="call-block-text"><%= t('views.call_section.text.line_1')%><br>
+              <%= t('views.call_section.text.line_2')%><br>
+              <%= t('views.call_section.text.line_3')%><br>
+              <%= t('views.call_section.text.line_4')%></p>
           </div>
           <%= render 'components/call_form' %>
         </div>
@@ -96,27 +96,53 @@
   <section id="backpack-colors" class="container-fluid">
     <div class="row">
       <div class="col-2"></div>
-      <div class="col-3">
+      <div class="col-3 image-backpack-block">
         <%= image_tag @backpacks.first.image, class: 'img-fluid', id: 'image-backpack', alt: 'Backpack'  %>
       </div>
       <div class="col-2"></div>
 
       <div class="col-3">
-        <h2 class="black-text"><%= t('views.index.model') %></h2>
-        <label class="black-text"><%= t('views.index.color_choice') %></label>
+        <p class="black-text order-block-title up-1"><%= t('views.index.model') %></p>
+        <label class="black-text choice-label-text"><%= t('views.index.color_choice') %></label>
+        <hr>
         <form class="custom-radios">
           <%= raw radio_color_tag @backpacks.first, checked: true %>
           <% @backpacks[1..-1].each do |backpack| %>
             <%= raw radio_color_tag backpack %>
           <% end %>
         </form>
-        <br>
-        <button class="btn btn-outline-danger w-100" data-toggle="modal" data-target="#orderForm" id="preOrder">
+        <hr>
+          <div class="row prices">
+            <div class="col-md-6 backpack-new-price"><%= t('views.index.new_price') %></div>
+            <s class="col-md-6 backpack-old-price"><%= t('views.index.old_price') %></s>
+          </div>
+          <div class="sale">
+            <div class="backpack-sale">
+              <%= t('views.index.sale.start') %>
+              <b class="backpack-sale-percent"><%= t('views.index.sale.percent') %></b>
+              <%= t('views.index.sale.end') %>
+            </div>
+          </div>
+        <hr>
+        <button class="btn btn-danger btn-lg btn-block" data-toggle="modal" data-target="#orderForm" id="preOrder">
           <%= t('views.index.buy_button') %>
         </button>
         <%= render 'components/order_form' %>
       </div>
       <div class="col-2"></div>
+      <div class="col-1"></div>
+      <div class="col-10">
+        <h6 class="black-text text-center backpack-info">
+          <%= t('views.index.info.material') %> |
+          <%= t('views.index.info.weight') %> |
+          <%= t('views.index.info.depth') %> |
+          <%= t('views.index.info.height') %> |
+          <%= t('views.index.info.width') %> |
+          <%= t('views.index.info.volume') %> |
+          <%= t('views.index.info.cashes') %>
+        </h6>
+      </div>
+      <div class="col-1"></div>
     </div>
   </section>
 

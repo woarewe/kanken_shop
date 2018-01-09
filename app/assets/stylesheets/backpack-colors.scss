@@ -2,7 +2,6 @@
   padding-top: 1%;
   background-color: white;
   color: black;
-  height: 800px;
 }
 
 .black-text {
@@ -44,7 +43,8 @@
         vertical-align: middle;
         cursor: pointer;
         border-radius: 50%;
-        border: 1px solid white;
+        border: 2px solid #FFFFFF;
+        //box-shadow: inset 2px 0 0 1px rgba(0, 0, 0, 0.5);
         background-repeat: no-repeat;
         background-position: center;
         text-align: center;
