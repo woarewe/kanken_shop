@@ -169,6 +169,10 @@
       background-color: #FF6347;
     }
 
+    &#color-gradient-test + label span {
+      background: linear-gradient(to right, green 50%, red 50%);
+    }
+
     &:checked + label span img {
       opacity: 1;
     }

@@ -1,14 +1,20 @@
 #call-section {
-  height: 677px;
-  background: url('call_background.jpg');
+  height: 893px;
+  background: url('call_background.jpeg');
   background-size: cover;
   position: relative;
 
   .call-text {
-    padding-top: 30%;
+    padding-top: 40%;
   }
 }
 
+#more-info {
+  background: url('about_background.jpg');
+  background-size: cover;
+  position: relative;
+  height: 1280px;
+}
 
 #girl {
   height: 910px;
@@ -19,7 +25,8 @@
 
 .call-block-text {
   font-family: Apple Chancery, cursive;
-  font-size: 40px;
+  font-size: 50px;
+  line-height: 60px;
 }
 
 .order-block-title {
