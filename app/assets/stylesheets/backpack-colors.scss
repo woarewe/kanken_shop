@@ -169,8 +169,52 @@
       background-color: #FF6347;
     }
 
-    &#color-gradient-test + label span {
-      background: linear-gradient(to right, green 50%, red 50%);
+    &#color-violet-plum + label span {
+      background: linear-gradient(to right, #8A2BE2 50%, #DDA0DD 50%);
+    }
+
+    &#color-green-pink + label span {
+      background: linear-gradient(to right, #768a88 50%, #da7c88 50%);
+    }
+
+    &#color-yellow-blocked + label span {
+      background: linear-gradient(to right, #e8c556 50%, #c9cab6 50%);
+    }
+
+    &#color-red-folk + label span {
+      background: linear-gradient(to right, #7d292e 50%, #e38b89 50%);
+    }
+
+    &#color-blue-pinstripe + label span {
+      background: linear-gradient(to right, #3568ac 50%, #b2bfdb 50%);
+    }
+
+    &#color-black-striped + label span {
+      background: linear-gradient(to right, #000000 50%, #c7c3b6 50%);
+    }
+
+    &#color-graphite-blue + label span {
+      background: linear-gradient(to right, #353237 50%, #2f78bb 50%);
+    }
+
+    &#color-ox-red-blue + label span {
+      background: linear-gradient(to right, #7d292e 50%, #3568ac 50%);
+    }
+
+    &#color-black-ox-red + label span {
+      background: linear-gradient(to right, #000000 50%, #7d292e 50%);
+    }
+
+    &#color-navy-yellow + label span {
+      background: linear-gradient(to right, #0f313d 50%, #e8c556 50%);
+    }
+
+    &#color-green-chess + label span {
+      background: linear-gradient(to right, #768a88 50%, #ccd8d5 50%);
+    }
+
+    &#color-royal-blue-red + label span {
+      background: linear-gradient(to right, #3568ac 50%, #7d292e 50%);
     }
 
     &:checked + label span img {
