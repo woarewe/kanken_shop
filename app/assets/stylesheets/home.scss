@@ -28,9 +28,12 @@
 }
 
 #girl {
-  height: 910px;
+  width: 100%;
   background: url('girl.png');
   background-size: cover;
+  height: 900px;
+  background-position: center center;
+  position: relative;
 
 }
 
@@ -119,3 +122,32 @@
   font-family: Helvetica, sans-serif;
   font-weight: bold;
 }
+
+.girl-title {
+  padding-top: 10%;
+  color: #a2232e;
+  font-family: Helvetica, sans-serif;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.girl-step {
+  padding-top: 5%;
+}
+
+.girl-step-title {
+  color: black;
+  font-size: 30px;
+}
+
+.girl-step-text {
+  padding-top: 2%;
+  color: gray;
+  font-size: 15px;
+}
+
+
+.girl-button {
+  background-color: #a2232e;
+}
+
