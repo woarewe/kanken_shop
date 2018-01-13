@@ -3,6 +3,7 @@
   background: url('call_background.jpeg');
   background-size: cover;
   position: relative;
+  background-position: center center;
 
   .call-text {
     padding-top: 40%;
@@ -12,8 +13,10 @@
 #more-info {
   background: url('about_background.jpg');
   background-size: cover;
+  background-position: center center;
   position: relative;
   height: 1280px;
+  width: 100%;
 }
 
 #girl {
@@ -81,14 +84,20 @@
 }
 
 .more-info-title {
-  padding-top: 40%;
+  padding-top: 30%;
   font-size: 55px;
-  color: #B00100;
+  line-height: 75px;
+  color: #0c5460;
   font-family: Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 .more-info-text {
   font-size: 30px;
+  text-align: center;
   padding-left: 5%;
-  color: black;
+  color: #10707f;
+  line-height: 40px;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
 }
