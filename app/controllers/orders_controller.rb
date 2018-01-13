@@ -23,6 +23,7 @@ class OrdersController < ApplicationController
   def index
     @orders = Order.all
     @calls = Call.all
+    @backpacks = Backpack.all
   end
 
   private

@@ -68,6 +68,8 @@ ru:
     admin_panel:
       orders: 'Заказы'
       calls: 'Звонки'
+      backpacks: 'Рюкзаки'
+      add: 'Добавить'
       name: 'Имя'
       phone: 'Номер телефона'
       adress: 'Адрес'
