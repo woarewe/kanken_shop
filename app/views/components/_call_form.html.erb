@@ -1,11 +1,10 @@
 <%= form_for @call, remote: true, class: 'form-inline' do |form| %>
     <div class="row">
-      <div class="col-md-12">
-        <%= form.text_field :phone, class: 'form-control phone w-75', value: '+375'  %>
+      <div class="col-md-6">
+        <%= form.text_field :phone, class: 'form-control phone', value: '+375' %>
       </div>
-      <hr>
-      <div class="col-md-12">
-        <%= form.submit t('views.call_section.button'), class: 'btn btn-danger btn-lg w-75' %>
+      <div class="col-md-6">
+        <%= form.submit t('views.call_section.button'), class: 'btn btn-danger btn-lg btn-block' %>
       </div>
     </div>
 <% end %>
