@@ -261,17 +261,53 @@
     </div>
   </section>
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+
   <!-- CTA -->
   <section id="cta" class="wrapper style4">
     <div class="inner">
-      <header>
-        <h2>Arcue ut vel commodo</h2>
-        <p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>
-      </header>
-      <ul class="actions vertical">
-        <li><a href="#" class="button fit special">Activate</a></li>
-        <li><a href="#" class="button fit">Learn More</a></li>
-      </ul>
+
+        <div class="tz-gallery">
+
+          <div class="row">
+            <div class="col-sm-6 col-md-4">
+              <a class="lightbox" href=<%= asset_path('gallery/1.png') %>>
+                <%= image_tag 'gallery/1.png' %>
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <a class="lightbox" href=<%= asset_path('gallery/2.png') %>>
+                <%= image_tag 'gallery/2.png' %>
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <a class="lightbox" href=<%= asset_path('gallery/3.png') %>>
+                <%= image_tag 'gallery/3.png' %>
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <a class="lightbox" href=<%= asset_path('gallery/4.png') %>>
+                <%= image_tag 'gallery/4.png' %>
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <a class="lightbox" href=<%= asset_path('gallery/5.png') %>>
+                <%= image_tag 'gallery/5.png' %>
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <a class="lightbox" href=<%= asset_path('gallery/6.png') %>>
+                <%= image_tag 'gallery/6.png' %>
+              </a>
+            </div>
+        </div>
+        </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+      <script>
+          baguetteBox.run('.tz-gallery');
+      </script>
     </div>
   </section>
 
