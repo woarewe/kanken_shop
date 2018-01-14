@@ -83,6 +83,8 @@ ru:
       title: 'О нас говорят'
       modal_title: 'Оставить отзыв'
     girl_section:
+      modal:
+        title: 'Заказать звонок'
       title: 'От заявки до рюкзака в 3 простых шага'
       steps:
         first:

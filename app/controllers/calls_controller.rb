@@ -20,6 +20,6 @@ class CallsController < ApplicationController
   private
 
   def call_params
-    params.require(:call).permit(:phone)
+    params.require(:call).permit(:phone, :name)
   end
 end

@@ -3,23 +3,22 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title black-text text-center" id="exampleModalLabel">
-          <%= t('views.order_form.title') %>
+          <%= t('views.girl_section.modal.title') %>
         </h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="closeOrderForm">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="closeCallModalForm">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
         <%= form_for @call, remote: true do |f| %>
             <div class="form-group">
-              <%= f.text_field :name, class: 'form-control', placeholder: t('views.order_form.placeholders.name'),
-                               oninvalid: "setCustomValidity(#{t('views.order_form.pattern_alert')})"   %>
+              <%= f.text_field :name , class: 'form-control', placeholder: t('views.order_form.placeholders.name')%>
             </div>
             <div class="form-group">
               <%= f.text_field :phone, class: 'form-control phone', placeholder: t('views.order_form.placeholders.phone'), type: 'tel', value: '+375' %>
             </div>
             <hr/>
-            <%= f.submit t('views.order_form.submit'), class: 'btn btn-danger w-100' %>
+            <%= f.submit t('views.order_form.submit'), class: 'btn btn-danger w-100 girl-button'     %>
         <% end %>
       </div>
     </div>
