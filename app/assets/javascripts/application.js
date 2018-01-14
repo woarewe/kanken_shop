@@ -13,7 +13,7 @@
 //= require jquery
 //= require popper
 //= require bootstrap
-//= require color_panel.js.erb
+//= require color_panel
 //= require skel
 //= require home
 //= require rails-ujs
@@ -22,6 +22,7 @@
 //= require_tree .
 
 (function($) {
+
 
     skel
         .breakpoints({
