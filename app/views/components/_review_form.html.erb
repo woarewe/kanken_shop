@@ -10,6 +10,19 @@
         </button>
       </div>
       <div class="modal-body">
+        <%= form_for @review, remote: true do |form| %>
+            <div class="form-group">
+              <%= form.text_field :name, class: 'form-control', placeholder: t('views.review_section.placeholder.name') %>
+            </div>
+            <div class="form-group">
+              <%= form.text_field :city, class: 'form-control', placeholder: t('views.review_section.placeholder.city') %>
+            </div>
+            <div class="form-group">
+              <%= form.text_area :text, class: 'form-control', placeholder: t('views.review_section.placeholder.text') %>
+            </div>
+            <hr>
+            <%= form.submit t('views.review_section.review_button'), class: 'btn btn-danger w-100' %>
+        <% end %>
       </div>
     </div>
   </div>

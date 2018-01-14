@@ -4,5 +4,6 @@ class HomeController < ApplicationController
     @order = Order.new
     @call = Call.new
     @reviews = Review.all
+    @review = Review.new
   end
 end

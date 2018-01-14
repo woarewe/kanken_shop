@@ -82,6 +82,11 @@ ru:
       review_button: 'Оставить отзыв'
       title: 'О нас говорят'
       modal_title: 'Оставить отзыв'
+      placeholder:
+        city: 'Ваш город'
+        name: 'Ваше имя'
+        text: 'Что Вы о нас думаете'
+      alert: 'Ваш отзыв успешно принят!'
     girl_section:
       modal:
         title: 'Заказать звонок'
