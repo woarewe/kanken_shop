@@ -20,7 +20,7 @@
             </div>
             <div class="form-group">
               <%= f.text_area :adress, class: 'form-control', placeholder: t('views.order_form.placeholders.adress'),
-                              oninvalid: "setCustomValidity(#{t('views.order_form.pattern_alert')})" %>
+                              oninvalid: "setCustomValidity(#{t('views.order_form.pattern_alert')})", rows: 4 %>
             </div>
             <div class="form-group" hidden>
               <%= f.text_field :color, id: 'backpackColor' %>

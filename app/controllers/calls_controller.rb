@@ -6,6 +6,8 @@ class CallsController < ApplicationController
     @call = Call.new(call_params)
     @call.save
 
+    CallMailer.with(order: @call).notice_call_email.deliver_later
+
     respond_to do |format|
       format.js
     end
