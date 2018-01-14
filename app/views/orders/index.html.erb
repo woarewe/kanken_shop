@@ -51,10 +51,31 @@
         </tr>
         </thead>
         <tbody>
-        <%= render @backpacks %>
+          <%= render @backpacks %>
         </tbody>
       </table>
     </div>
     <div class="col-4"></div>
+    <div class="col-2"></div>
+    <div class="col-8">
+      <h1><%= t('views.admin_panel.orders') %></h1>
+      <table class="table">
+        <thead>
+        <tr>
+          <th scope="col"><%= t('views.admin_panel.name') %></th>
+          <th scope="col"><%= t('views.admin_panel.сity') %></th>
+          <th scope="col"><%= t('views.admin_panel.text') %></th>
+          <th scope="col"><%= t('views.admin_panel.status') %></th>
+          <th scope="col"><%= t('views.admin_panel.control') %></th>
+        </tr>
+        </thead>
+        <tbody>
+          <%= render  partial: 'reviews/review_table', collection: @reviews %>
+        </tbody>
+      </table>
+      <hr>
+      <hr>
+    </div>
+    <div class="col-2"></div>
   </div>
 </div>

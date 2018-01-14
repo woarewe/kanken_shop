@@ -20,7 +20,7 @@
   <section id="one" class="container-fluid">
     <div class="row">
       <div class="col-md-4">
-        <div class="card text-center">
+        <div class="card text-center card-icons">
           <%= image_tag 'ico_delivery.png', class: 'card-img-top'%>
           <div class="card-body">
             <p class="card-text"><%= t('views.index.delivery') %></p>
@@ -28,7 +28,7 @@
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card text-center">
+        <div class="card text-center card-icons">
           <%= image_tag 'ico_payment.png', class: 'card-img-top'%>
           <div class="card-body">
             <p class="card-text"><%= t('views.index.payment') %></p>
@@ -36,7 +36,7 @@
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card text-center">
+        <div class="card text-center card-icons">
           <%= image_tag 'ico_return.png', class: 'card-img-top'%>
           <div class="card-body">
             <p class="card-text"><%= t('views.index.return') %></p>
@@ -237,21 +237,26 @@
 
 
   <!-- Reviews -->
-  <section id="reviews">
+  <section id="reviews-section">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-4">
-          <h1><%= t('views.review_section.title') %></h1>
-          <button class="btn btn-danger w-100" data-toggle="modal" data-target="#reviewForm"><%= t('views.review_section.review_button') %></button>
+        <div class="col-md-6 text-center">
+          <h1 class="reviews-title"><%= t('views.review_section.title') %></h1>
+          <button class="btn btn-danger w-50" data-toggle="modal" data-target="#reviewForm"><%= t('views.review_section.review_button') %></button>
           <%= render 'components/review_form' %>
         </div>
-        <div class="col-md-4">
-          <div id="reviews_list">
-            <%= render @reviews %>
+        <div class="col-md-6">
+          <div id="reviews-list">
+            <div class="card text-center">
+              <div class="card-header">
+                <%= t('views.review_section.reviews_list.title') %>
+              </div>
+              <div class="card-block reviews-body">
+                <%= render @reviews %>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-md-2"></div>
       </div>
     </div>
   </section>

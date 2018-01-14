@@ -1,20 +1,26 @@
 <tr>
-  <td><%= backpack.color %></td>
+  <td><%= review_table.name %></td>
+  <td><%= review_table.city %></td>
+  <td><p><%= review_table.text %></p></td>
   <td>
-    <% if backpack.status %>
-        <%= form_for backpack do |form| %>
+    <% if review_table.status %>
+        <%= form_for review_table do |form| %>
             <div class="form-group" hidden>
               <%= form.check_box :status, checked: false %>
             </div>
             <%= form.submit t('views.admin_panel.delete'), class: 'btn btn-warning' %>
         <% end %>
     <% else %>
-        <%= form_for backpack do |form| %>
+        <%= form_for review_table do |form| %>
             <div class="form-group" hidden>
               <%= form.check_box :status, checked: true %>
             </div>
             <%= form.submit t('views.admin_panel.add'), class: 'btn btn-primary' %>
         <% end %>
     <% end %>
+  </td>
+  <td>
+    <%= link_to t('views.admin_panel.delete'), review_path(review_table), method: :delete,
+                data: { confirm: t('views.admin_panel.confirmation') }, class: 'btn btn-danger' %>
   </td>
 </tr>

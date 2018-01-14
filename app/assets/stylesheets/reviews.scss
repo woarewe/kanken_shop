@@ -1,12 +1,32 @@
-#reviews {
-  padding-top: 10%;
+#reviews-section {
   height: 800px;
-  background-color: white;
+  background-color: lightblue;
 }
 
-#reviews_list {
-  height: 400px;
+#reviews-list {
+  padding-top: 10%;
+}
+
+.card {
+  color: black;
+}
+
+.reviews-title {
+  padding-top: 20%;
+}
+
+.reviews-body {
+  height: 500px;
   overflow: scroll;
   overflow-x: hidden;
-  color: black;
+}
+
+.review-title {
+  padding-left: 5%;
+}
+
+.review-text {
+  padding-left: 7%;
+  color: gray;
+  font-size: 15px;
 }

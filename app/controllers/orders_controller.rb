@@ -24,6 +24,7 @@ class OrdersController < ApplicationController
     @orders = Order.all
     @calls = Call.all
     @backpacks = Backpack.all
+    @reviews = Review.all
   end
 
   private
