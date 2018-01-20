@@ -182,14 +182,14 @@
               <div class="row">
                 <div class="col-md-3"></div>
                 <div class="col-md-1">
-                  <%= image_tag 'girl_call.png', class: 'card-img-top'%>
+                  <%= image_tag 'girl_call.png', class: 'card-img-girl'%>
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-6">
                   <div class="girl-step-title"><%= t('views.girl_section.steps.first.title') %></div>
                   <div class="girl-step-text"><%= t('views.girl_section.steps.first.text') %></div>
-                  <div class="text-center">
-                    <button class="btn btn-danger girl-button w-75" data-toggle="modal" data-target="#callModalForm"><%= t('views.call_section.button') %></button>
+                  <div class="girl-run-modal">
+                    <button class="btn btn-danger girl-button w-50" data-toggle="modal" data-target="#callModalForm"><%= t('views.call_section.button') %></button>
                   </div>
                   <%= render 'components/modal_call_form' %>
                 </div>
@@ -202,7 +202,7 @@
               <div class="row">
                 <div class="col-md-3"></div>
                 <div class="col-md-1">
-                  <%= image_tag 'girl_get.png', class: 'card-img-top'%>
+                  <%= image_tag 'girl_get.png', class: 'card-img-girl'%>
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-6">
@@ -218,7 +218,7 @@
               <div class="row">
                 <div class="col-md-3"></div>
                 <div class="col-md-1">
-                  <%= image_tag 'girl_pay.png', class: 'card-img-top'%>
+                  <%= image_tag 'girl_pay.png', class: 'card-img-girl'%>
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-6">
