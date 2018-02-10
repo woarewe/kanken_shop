@@ -1,4 +1,7 @@
-<p><%= @order.name %></p>
-<p><%= @order.phone %></p>
-<p><%= @order.color %></p>
-<p><%= @order.adress %></p>
+<h1><%= t('mailers.new_order') %></h1>
+<hr>
+<h3><%= t('mailers.name')%></h3><p><%= @order.name %></p>
+<h3><%= t('mailers.number')%></h3><p><%= @order.phone %></p>
+<h3><%= t('mailers.color')%></h3><p><%= @order.color %></p>
+<h3><%= t('mailers.adress')%></h3><p><%= @order.adress %></p>
+
