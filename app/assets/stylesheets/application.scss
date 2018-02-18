@@ -1263,7 +1263,7 @@ table {
   }
 
   .close {
-    background-image: url('images/close.svg');
+    background-image: url('/app/assets/images/close.svg');
     background-position: 4.85em 1em;
     background-repeat: no-repeat;
     border: 0;
@@ -1726,7 +1726,7 @@ body.is-mobile {
 
 body.landing {
   #page-wrapper {
-    @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("banner.png")'));
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('banner.png') ;
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -1748,7 +1748,7 @@ body.is-mobile {
 
     #banner,
     .wrapper.style4 {
-      @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("banner.png")'));
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('banner.png') ;
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
