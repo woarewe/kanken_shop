@@ -7,14 +7,6 @@
 
   .call-text {
     padding-top: 40%;
-    text-shadow: 0 1px 0 #ccc,
-    0 2px 0 #c9c9c9,
-    0 3px 0 #bbb,
-    0 4px 0 #b9b9b9,
-    0 0 5px rgba(0,0,0,.1),
-    0 1px 3px rgba(0,0,0,.3),
-    0 3px 5px rgba(0,0,0,.2),
-    0 10px 10px rgba(0,0,0,.2)
   }
 }
 
@@ -98,29 +90,15 @@
   padding-top: 30%;
   font-size: 55px;
   line-height: 75px;
-  text-shadow: 0 1px 0 #ccc,
-  0 2px 0 #c9c9c9,
-  0 3px 0 #bbb,
-  0 4px 0 #b9b9b9,
-  0 1px 3px rgba(0,0,0,.3),
-  0 3px 5px rgba(0,0,0,.2);
-  font-family: Helvetica, sans-serif;
-  font-weight: bold;
+  color: #b9281d;
 }
 
 .more-info-text {
-  font-size: 30px;
-  text-align: center;
   padding-left: 5%;
-  text-shadow: 0 1px 0 #ccc,
-  0 2px 0 #c9c9c9,
-  0 3px 0 #bbb,
-  0 4px 0 #b9b9b9,
-  0 1px 3px rgba(0,0,0,.3),
-  0 3px 5px rgba(0,0,0,.2);
+  font-size: 30px;
   line-height: 40px;
-  font-family: Helvetica, sans-serif;
-  font-weight: bold;
+  color: white;
+  font-family: "Arial", sans-serif;
 }
 
 
@@ -155,4 +133,13 @@
 
 .girl-run-modal {
   padding-top: 5%;
+}
+
+.title-font {
+  font-family: "Arial Black", sans-serif;
+}
+
+.text-font {
+  font-family: "Arial Black", sans-serif;
+  font-weight: bold;
 }
