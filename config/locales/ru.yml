@@ -89,7 +89,9 @@ ru:
       confirmation: 'Вы уверены?'
     review_section:
       review_button: 'Оставить отзыв'
-      title: 'О нас говорят'
+      title:
+        line_1: 'О нас'
+        line_2: 'говорят'
       modal_title: 'Оставить отзыв'
       placeholder:
         city: 'Ваш город'

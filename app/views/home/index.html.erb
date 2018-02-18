@@ -245,15 +245,31 @@
   <section id="reviews-section">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-6 text-center">
-          <h1 class="reviews-title"><%= t('views.review_section.title') %></h1>
-          <button class="btn btn-danger w-50" data-toggle="modal" data-target="#reviewForm"><%= t('views.review_section.review_button') %></button>
-          <%= render 'components/review_form' %>
+        <div class="col-md-5">
+          <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+              <div class="reviews-title">
+                <div><%= t('views.review_section.title.line_1') %></div>
+                <div><%= t('views.review_section.title.line_2') %></div>
+              </div>
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-12">
+              <br>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+              <button class="btn btn-danger w-100 review-button" data-toggle="modal" data-target="#reviewForm"><%= t('views.review_section.review_button') %></button>
+              <%= render 'components/review_form' %>
+            </div>
+            <div class="col-md-2"></div>
+          </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-7">
           <div id="reviews-list">
             <div class="card text-center">
-              <div class="card-header">
+              <div class="card-header title-font">
                 <%= t('views.review_section.reviews_list.title') %>
               </div>
               <div class="card-block reviews-body">
