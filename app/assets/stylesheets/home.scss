@@ -41,7 +41,7 @@
 }
 
 .choice-label-text {
-  font-family: Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 25px;
 }
 
@@ -56,21 +56,21 @@
 
 .backpack-new-price {
   color: black;
-  font-size: 40px;
-  font-family: Impact, fantasy;
+  font-size: 35px;
+  font-family: "Arial Black", sans-serif;
 }
 
 .backpack-old-price {
-  font-family: Impact, fantasy;
+  font-family: "Arial Black", sans-serif;
   color: lightgray;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .backpack-sale {
   padding-top: 3%;
-  font-family: Impact, fantasy;
+  font-family: "Arial", sans-serif;
   color: gray;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 
@@ -83,7 +83,8 @@
 }
 
 .backpack-info {
-  padding-bottom: 3%;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .more-info-title {
@@ -140,6 +141,5 @@
 }
 
 .text-font {
-  font-family: "Arial Black", sans-serif;
-  font-weight: bold;
+  font-family: "Arial", sans-serif;
 }

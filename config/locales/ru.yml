@@ -36,8 +36,8 @@ ru:
       model: 'Kanken Classic'
       color_choice: 'Выберете цвет: '
       buy_button: 'Оставить заказ'
-      new_price: '149 руб.'
-      old_price: '250 руб.'
+      new_price: '115 руб.'
+      old_price: '200 руб.'
       info:
         material: 'Материал: Полиэстр'
         weight: 'Вес: 290 гр'
@@ -47,9 +47,9 @@ ru:
         volume: 'Объём: 16 л'
         cashes: 'Карманы: 1 впереди, 2 сбоку'
       sale:
-        percent: ' -40% '
-        start: 'Скидка'
-        end: 'до конца зимнего периода 2018 года!'
+        percent: ' 40% '
+        start: 'Скидка более'
+        end: 'до конца зимнего периода 2018 года! Цвета те же, что и на оригинале.'
     order_form:
       title: '3 простых шага!'
       placeholders:
